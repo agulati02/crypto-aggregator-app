@@ -44,11 +44,15 @@ This is a mini project that demonstrates the use of Server-Sent Events (SSE) and
 
 - Start the application (typical Spring Boot run via Maven):
 
+    ```bash
 	mvn spring-boot:run
+    ```
 
 - Open the SSE stream for BTC (example):
 
+    ```bash
 	curl -N http://localhost:8080/api/v1/ticker/BTC-USDT
+    ```
 
 The `-N` flag tells curl not to buffer the output so you can see events as they arrive.
 
